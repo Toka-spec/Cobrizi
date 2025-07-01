@@ -10,30 +10,25 @@
   <header class="navbar">
     <h1>Presley Chweneyagae</h1>
     <nav>
+      <a href="#home" onclick="showSection('home')">Home</a>
       <a href="#about" onclick="showSection('about')">About</a>
-      <a href="#work" onclick="showSection('work')">Work</a>
       <a href="#photos" onclick="showSection('photos')">Photos</a>
+      <a href="#achievements" onclick="showSection('achievements')">Achievements</a>
       <a href="#videos" onclick="showSection('videos')">Videos</a>
-      <a href="#contact" onclick="showSection('contact')">Contact</a>
     </nav>
   </header>
 
+  <section id="home" class="section">
+    <h2>Welcome</h2>
+    <p>Presley Chweneyagae is a celebrated actor, director, and storyteller. Best known for his role in <em>Tsotsi</em>, he continues to inspire through performance and activism.</p>
+  </section>
+
   <section id="about" class="section">
     <h2>About Presley</h2>
-    <p>Presley Chweneyagae is a South African actor known for his powerful performances in both film and theatre. He made global headlines after starring in <em>Tsotsi</em>, which won the 2005 Academy Award. He remains a passionate activist, storyteller, and director focused on inspiring the next generation.</p>
+    <p>Presley Chweneyagae is a South African actor known for his powerful performances in both film and theatre. His breakout role in <em>Tsotsi</em> won the 2005 Academy Award for Best Foreign Language Film. Presley is also a director and community leader focused on empowering youth.</p>
   </section>
 
-  <section id="work" class="section">
-    <h2>Work & Achievements</h2>
-    <ul>
-      <li><strong>Tsotsi</strong> – Academy Award-winning film</li>
-      <li><strong>The River</strong> – Acclaimed South African drama series</li>
-      <li><strong>Stage Director</strong> – Political and youth-focused theatre</li>
-      <li><strong>Community Leader</strong> – Art initiatives and mentorship</li>
-    </ul>
-  </section>
-
-  <section id="photos" class="section gallery">
+  <section id="photos" class="section">
     <h2>Photo Gallery</h2>
     <div class="photo-grid">
       <img src="https://via.placeholder.com/300x200?text=Presley+1" alt="Presley 1">
@@ -41,6 +36,16 @@
       <img src="https://via.placeholder.com/300x200?text=Presley+3" alt="Presley 3">
       <img src="https://via.placeholder.com/300x200?text=Presley+4" alt="Presley 4">
     </div>
+  </section>
+
+  <section id="achievements" class="section">
+    <h2>Achievements</h2>
+    <ul>
+      <li><strong>Tsotsi</strong> – Academy Award-winning film</li>
+      <li><strong>The River</strong> – Lead role in a top South African series</li>
+      <li><strong>Stage Director</strong> – Focused on youth and political themes</li>
+      <li><strong>Mentor</strong> – Uplifting future artists through workshops and training</li>
+    </ul>
   </section>
 
   <section id="videos" class="section">
@@ -51,17 +56,10 @@
     </div>
   </section>
 
-  <section id="contact" class="section contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:info@presleychweneyagae.com">info@presleychweneyagae.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/presleychweneyagae" target="_blank">@presleychweneyagae</a></p>
-  </section>
-
   <footer class="footer">
     <p>&copy; 2025 Presley Chweneyagae. All rights reserved.</p>
   </footer>
 
-  <!-- JavaScript to show only one section -->
   <script>
     function showSection(id) {
       const sections = document.querySelectorAll('.section');
@@ -69,8 +67,8 @@
       document.getElementById(id).style.display = 'block';
     }
 
-    // Show the About section by default on load
-    window.onload = () => showSection('about');
+    // Show home on page load
+    window.onload = () => showSection('home');
   </script>
 </body>
-      </html>
+  </html>
