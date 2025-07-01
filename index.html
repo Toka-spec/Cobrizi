@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -8,95 +9,85 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
-  color: #222;
-  line-height: 1.6;
-}
+    }
 
-.navbar {
-  background-color: #111;
-  color: white;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
+    }
 
-.navbar nav a {
-  color: white;
-  margin-left: 1.5rem;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+    .navbar {
+      background-color: #111;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-.navbar nav a:hover {
-  color: #f7c600;
-}
+    .navbar nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
 
-.section {
-  display: none;
-  padding: 4rem 2rem;
-  max-width: 1000px;
-  margin: auto;
-  background: white;
-  border-radius: 10px;
-  margin-top: 2rem;
-}
+    .navbar nav a:hover {
+      color: #f7c600;
+    }
 
-.section h2 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  color: #333;
-}
+    .section {
+      display: none;
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
 
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
+    .section h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #333;
+    }
 
-.photo-grid img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
 
-.video-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-}
+    .photo-grid img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
 
-.video-container iframe {
-  width: 100%;
-  height: 200px;
-  border-radius: 8px;
-}
+    .video-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
 
-.qr-code img {
-  max-width: 200px;
-  border: 4px solid #000;
-  border-radius: 10px;
-  margin-top: 10px;
-}
+    .video-container iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+    }
 
-.qr-code {
-  text-align: center;
-}
-
-.footer {
-  background-color: #111;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
+    .footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
@@ -108,15 +99,20 @@
       <a href="#photos" onclick="showSection('photos')">Photos</a>
       <a href="#achievements" onclick="showSection('achievements')">Achievements</a>
       <a href="#videos" onclick="showSection('videos')">Videos</a>
-      <a href="#qr" onclick="showSection('qr')">QR Code</a>
     </nav>
-  </header>  <section id="home" class="section">
+  </header>
+
+  <section id="home" class="section">
     <h2>Welcome</h2>
     <p>Presley Chweneyagae is a celebrated actor, director, and storyteller. Best known for his role in <em>Tsotsi</em>, he continues to inspire through performance and activism.</p>
-  </section>  <section id="about" class="section">
+  </section>
+
+  <section id="about" class="section">
     <h2>About Presley</h2>
     <p>Presley Chweneyagae is a South African actor known for his powerful performances in both film and theatre. His breakout role in <em>Tsotsi</em> won the 2005 Academy Award for Best Foreign Language Film. Presley is also a director and community leader focused on empowering youth.</p>
-  </section>  <section id="photos" class="section">
+  </section>
+
+  <section id="photos" class="section">
     <h2>Photo Gallery</h2>
     <div class="photo-grid">
       <img src="1.png" alt="Presley 1">
@@ -124,7 +120,9 @@
       <img src="3.png" alt="Presley 3">
       <img src="6.png" alt="Presley 6">
     </div>
-  </section>  <section id="achievements" class="section">
+  </section>
+
+  <section id="achievements" class="section">
     <h2>Achievements</h2>
     <ul>
       <li><strong>Tsotsi</strong> – Academy Award-winning film</li>
@@ -132,24 +130,30 @@
       <li><strong>Stage Director</strong> – Focused on youth and political themes</li>
       <li><strong>Mentor</strong> – Uplifting future artists through workshops and training</li>
     </ul>
-  </section>  <section id="videos" class="section">
+  </section>
+
+  <section id="videos" class="section">
     <h2>Video Highlights</h2>
     <div class="video-container">
       <iframe src="5.mp4" frameborder="0" allowfullscreen></iframe>
       <iframe src="6.mp4" frameborder="0" allowfullscreen></iframe>
     </div>
-  </section>  <section id="qr" class="section qr-code">
-    <h2>Scan to Visit</h2>
-    <p>Use your phone camera to visit our website:</p>
-    <img src="cobrizi-qr.png" alt="QR Code to Cobrizi" />
-  </section>  <footer class="footer">
+  </section>
+
+  <footer class="footer">
     <p>&copy; 2025 Presley Chweneyagae. All rights reserved.</p>
-  </footer>  <script>
+  </footer>
+
+  <script>
     function showSection(id) {
       const sections = document.querySelectorAll('.section');
       sections.forEach(section => section.style.display = 'none');
       document.getElementById(id).style.display = 'block';
     }
+
+    // Show photos on page load
     window.onload = () => showSection('photos');
-  </script></body>
-  </html>
+  </script>
+</body>
+                       </html>
+  
