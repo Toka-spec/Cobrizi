@@ -4,7 +4,91 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Presley Chweneyagae - Official Website</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      background-color: #111;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .navbar nav a:hover {
+      color: #f7c600;
+    }
+
+    .section {
+      display: none;
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    .section h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .video-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+    }
+
+    .footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
@@ -31,10 +115,11 @@
   <section id="photos" class="section">
     <h2>Photo Gallery</h2>
     <div class="photo-grid">
-      <img src="6.png">
+      <img src="https://via.placeholder.com/300x200?text=Presley+1" alt="Presley 1">
       <img src="https://via.placeholder.com/300x200?text=Presley+2" alt="Presley 2">
       <img src="https://via.placeholder.com/300x200?text=Presley+3" alt="Presley 3">
       <img src="https://via.placeholder.com/300x200?text=Presley+4" alt="Presley 4">
+      <img src="6.png" alt="Presley 6">
     </div>
   </section>
 
@@ -67,8 +152,8 @@
       document.getElementById(id).style.display = 'block';
     }
 
-    // Show home on page load
-    window.onload = () => showSection('home');
+    // Show photos on page load
+    window.onload = () => showSection('photos');
   </script>
 </body>
-  </html>
+      </html>
